@@ -1,0 +1,27 @@
+<p>
+  formulario works!
+</p>
+
+
+
+<form [formGroup]="forma"  (ngSubmit)="validarFormulario()" >
+
+  <input type="text" 
+      formControlName="nombre"
+      name="nombre"  
+      placeholder="nombre">
+  
+      <input type="text" 
+      formControlName="pass"
+      name="pass"  
+      placeholder="clave">
+
+      <br>
+      <br>
+
+      <button type="submit" >enviar</button>
+</form>
+
+<div *ngIf="message" class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
